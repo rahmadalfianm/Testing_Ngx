@@ -1,9 +1,7 @@
 # Testing_Ngx
 
 NAMA  : Rahmad Alfian Maskuri
-
 NIM   : 1841720048
-
 KELAS : TI-3A / 22
 
 1. Install Cypress pada nodejs project. Silahkan cari informasi cara instalasi di cypress.io
