@@ -11,3 +11,5 @@ KELAS : TI-3A / 22
 3. Cypress akan membuat folder bernama Cypress pada project nodejs setelah perintah npx cypress dijalankan.
 4. Perhatikan folder integration. Folder integration adalah tempat kita meletakkan test suite nantinya.
 5. Cara penulisan test case dan test suite pada Cypress serupa dengan Jest
+
+Halaman WEB yang di Testing : https://hndr91.github.io/demo-ui/
