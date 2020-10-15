@@ -13,7 +13,7 @@ describe('My first test suite', () => {
     //     cy.url().should('include', 'forms/layouts?')
 
     // }); 
-    
+
     // it('Testing Using the Grid',() => {
     //     cy.visit('/');
     //     cy.contains('Forms').click();
@@ -39,17 +39,29 @@ describe('My first test suite', () => {
     //     cy.url().should('include', 'forms/layouts?');
     // });
 
-    it('Testing Horizonal Form', () => {
+    // it('Testing Horizonal Form', () => {
+    //     cy.visit('/');
+    //     cy.contains('Forms').click();
+    //     cy.contains('Form Layouts').click();
+    //     //karena ada id , jadi dicari menggunakan id
+    //     cy.get('#inputEmail3').type("RahmadAlfian@gmail.com");
+    //     cy.get('#inputPassword3').type("Rahmad");
+    //     cy.contains('nb-card', 'Horizontal form').find('.custom-checkbox').click();
+    //     cy.contains('nb-card', 'Horizontal form').find('[type="submit"]').click();
+    //     cy.url().should('include', 'forms/layouts?');
+
+    // });
+
+    it('Testing Basic Form', () => {
         cy.visit('/');
         cy.contains('Forms').click();
         cy.contains('Form Layouts').click();
-        //karena ada id , jadi dicari menggunakan id
-        cy.get('#inputEmail3').type("RahmadAlfian@gmail.com");
-        cy.get('#inputPassword3').type("Rahmad");
-        cy.contains('nb-card', 'Horizontal form').find('.custom-checkbox').click();
-        cy.contains('nb-card', 'Horizontal form').find('[type="submit"]').click();
+
+        cy.get('[id="exampleInputEmail1"]').type("RahmadAlfian@gmail.com");
+        cy.get('[id="exampleInputPassword1"]').click().type("Rahmad");
+        cy.contains('nb-card', 'Basic form').find('.custom-checkbox').click();
+        cy.contains('nb-card', 'Basic form').find('[type="submit"]').click();
         cy.url().should('include', 'forms/layouts?');
 
     });
-
 });
