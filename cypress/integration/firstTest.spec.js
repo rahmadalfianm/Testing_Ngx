@@ -32,7 +32,8 @@ describe('My first test suite', () => {
         cy.contains('nb-card', 'Using the Grid').contains("Disabled Option").parent('nb-radio').find('.inner-circle').click();
 
         cy.contains('nb-card', 'Using the Grid').find('[type="submit"]').click();
-
+        cy.url().should('include', 'forms/layouts?');
 
     });
+
 });
